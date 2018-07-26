@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 990px) {
+	.post-overview-date-container{
+		display: none;
+	}
+}
+@media only screen and (max-width: 575px){
+	#home-menu-logo-img-container{
+		display: none;
+	}
+	#navbar-brand-logo-img-container{
+		display: block;
+	}
+		#navbar-brand-logo-img{
+			width: 100px;
+			height: 100px;
+		    top: -75px;
+    		right: 0;
+		}
+	#navbar-coantainer{
+		padding-left: 3rem;
+	}
+	#menu-toggler-btn{
+
+	}
+}
