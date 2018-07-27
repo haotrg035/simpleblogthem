@@ -40,7 +40,6 @@ html,body{
 	}
 #page-header-menu{
 	width: 100%;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
 	padding: 1rem 0;
 }
 #page-header-menu li{
@@ -86,23 +85,20 @@ visibility: hidden;
 	transform: translateX(-50%);
 }
 .post-overview-container{
-	margin-top: 2.5rem;
 	padding: 1rem 0px;
 	border-bottom:dashed 2px rgba(0,0,0,0.2);
 }
 article.overview-post{
 	padding-left: 1rem;
-	margin: 1.5rem auto;
+	margin: 1rem auto;
 }
 .overview-infor{
-	border-bottom: 1px solid rgba(0,0,0,0.2);
-	padding-bottom: 0.5rem;
 	padding-left: 1rem;
 	margin-bottom: 0.5rem;
 }
 .overview-infor-item{
 	display: inline-block;
-	min-width: 5rem;
+	min-width: 3rem;
 	border-right: 1px solid rgba(0,0,0,0.2);
 	margin-right: 0.5rem;
 	padding-right: 0.5rem;
@@ -110,18 +106,24 @@ article.overview-post{
 	.overview-infor-item:nth-child(3){
 		border: none;
 	}
-.post-overview-date-container{
-	position: relative;
+.post-icon{
+	display: inline-block;
+	background-size: cover;
+	width: 18px;
+	height: 16px;
 }
-.post-overview-date{
-	border: 6px solid gray;
-	border-radius: 50%;	
-	width: 125px;
-	height: 125px;
-	text-align: center;
-	line-height: 110px;
-	z-index: 999;
-	position: absolute;
-    top: -30px;
-    right: -20px;
+	.post-like-icon{
+		background-image: url(../img/icon/like-48dp.png);
+	}
+	.post-comment-icon{
+		background-image: url(../img/icon/comment-48dp.png);
+	}
+/*Sidebar Item*/
+.newest-post-board ul{
+	max-height: 400px;
+	overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }

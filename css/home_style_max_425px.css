@@ -3,6 +3,9 @@
 	.post-overview-date-container{
 		display: none;
 	}
+	.page-vertical-sidebar{
+		display: none;
+	}
 }
 @media only screen and (max-width: 575px){
 	#home-menu-logo-img-container{
@@ -19,8 +22,5 @@
 		}
 	#navbar-coantainer{
 		padding-left: 3rem;
-	}
-	#menu-toggler-btn{
-
 	}
 }

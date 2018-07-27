@@ -13,13 +13,13 @@
 <div id="page-container" class="fluid-container">
 	<header id="page-header" class="row">
 		<div class="page-cover-img"></div>
-			<nav id="page-header-menu" class="navbar fluid-container navbar-expand-sm">
+			<nav id="page-header-menu" class="navbar border-bottom fluid-container navbar-expand-sm">
 				<a href="#" id="navbar-brand-logo-img-container" class="navbar-brand page-logo-img-container">
 					<span id="navbar-brand-logo-img" class="page-logo-img"></span>
 				</a>
 				<button id="menu-toggler-btn" class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#main-collapse-nav">&#9776;</button>
 				<div class="navbar-collapse collapse justify-content-center" id="main-collapse-nav">
-					<ul id="navbar-coantainer" class="navbar-nav">
+					<ul id="navbar-coantainer" class="navbar-nav pl-5">
 						<li class="nav-item ">
 							<a class="nav-link" href="./index.html">Home</a>
 						</li>
@@ -49,50 +49,61 @@
 			<span class="display-5">Welcome to my Blog :)</span>
 		</div>
 	</header>
-	<section id="page-body" class="container">
-		<div class="row post-overview-container">
-			<div class="col col-lg-2 post-overview-date-container">
-				<h2 class="post-overview-date">21/12</h2>
+	<section id="page-body" class="row fluid-container mx-auto">
+		<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0">
+			<div class="sidebar-item newest-post-board w-100 border-bottom mt-5">
+				<h5 class="border-bottom pb-2">Bài viết mới nhất</h5>
+				<ul class="list-group">
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+				</ul>
 			</div>
-			<div class="col col-lg-10 post-overview-content-container">
-				<div class="overview-infor small">
-					<div class="overview-infor-item">Cat: <span class="overview-post-category">New post,hello world</span></div>
-					<div class="overview-infor-item">Like: <span class="overview-post-like">1</span></div>
-					<div class="overview-infor-item">Comment: <span class="overview-post-comment"></span>20</div>
+		</section><!--End sidebar----------------------------------------------------------------------> 
+		<section class="col-lg-8"><!-- Start page content-->
+			<div class="row post-overview-container py-0 pb-1 mt-5">
+				
+				<div class="col col-lg-12 post-overview-content-container">
+					<div class="overview-infor border-bottom pb-2 pt-1 small">
+						<div class="overview-infor-item">Category:
+							<span class="overview-post-category"><a href="#">New post</a>,<a href="#">Personal</a></span>
+						</div>
+						<div class="overview-infor-item">
+							<span class="post-icon post-like-icon"></span>&nbsp
+							<span class="overview-post-like">1</span>
+						</div>
+						<div class="overview-infor-item">
+							<span class="post-icon post-comment-icon"></span>&nbsp
+							<span class="overview-post-comment">20</span>
+						</div>
+					</div>
+					<article class="overview-post">
+						<header class="overview-post-title">
+							<h2> Cách ăn cơm bằng miệng </h2>
+						</header>
+						<main class="overview-post-content">
+							<p>Trong một không gian tối tăm, không có một âm thanh, chỉ có sự yên tĩnh đến cực hạn, đáng lẽ trong một nơi như vậy sẽ không có một sinh vật nào tồn tại, nhưng chính giữa của nơi đây có một người thanh niên đang nằm, hai con mắt của hắn ta nhắm chặt như đang bất tỉnh.</p>
+							<p>Hắn ta cao khoảng 1m8, có mái tóc màu đen, khuôn mặt bình thường, nếu thả hắn ta vào nơi đông người thì có lẽ ngươi sẽ không bao giờ thấy hắn ta vì hắn quá bình thường. Cơ thể của hắn hiện lên những đường cong lực lượng, cơ bắp mạnh khỏe, cơ bụng sáu múi, chắc là hắn đã chăm chỉ luyện tập cho cơ thể mình để bù lại cho khuôn mặt tầm thường.</p>
+						</main>
+						<footer class="overview-post-link"><a href="#" class="nav-link">Read more...</a></footer>
+					</article>
 				</div>
-				<article class="overview-post">
-					<header class="overview-post-title">
-						<h2> Chương 1: Sơ lâm Tu Chân Thế Giới </h2>
-					</header>
-					<main class="overview-post-content">
-						<p>Trong một không gian tối tăm, không có một âm thanh, chỉ có sự yên tĩnh đến cực hạn, đáng lẽ trong một nơi như vậy sẽ không có một sinh vật nào tồn tại, nhưng chính giữa của nơi đây có một người thanh niên đang nằm, hai con mắt của hắn ta nhắm chặt như đang bất tỉnh.</p>
-						<p>Hắn ta cao khoảng 1m8, có mái tóc màu đen, khuôn mặt bình thường, nếu thả hắn ta vào nơi đông người thì có lẽ ngươi sẽ không bao giờ thấy hắn ta vì hắn quá bình thường. Cơ thể của hắn hiện lên những đường cong lực lượng, cơ bắp mạnh khỏe, cơ bụng sáu múi, chắc là hắn đã chăm chỉ luyện tập cho cơ thể mình để bù lại cho khuôn mặt tầm thường.</p>
-					</main>
-					<footer class="overview-post-link"><a href="#" class="nav-link">Read more...</a></footer>
-				</article>
+			</div><!--End one post overview-->
+			
+		</section><!-- End post overview column-->
+		<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0">
+			<div class="sidebar-item author-infor-board">
+				<h5 class="border-bottom pb-2">Thông tin tác giả Blog</h5>
 			</div>
-		</div><!--End one post overview-->
-		<div class="row post-overview-container">
-			<div class="col col-lg-2 post-overview-date-container">
-				<h2 class="post-overview-date">21/12</h2>
-			</div>
-			<div class="col col-lg-10 post-overview-content-container">
-				<div class="overview-infor small">
-					<div class="overview-infor-item">Cat: <span class="overview-post-category">New post,hello world</span></div>
-					<div class="overview-infor-item">Like: <span class="overview-post-like">1</span></div>
-					<div class="overview-infor-item">Comment: <span class="overview-post-comment"></span>20</div>
-				</div>
-				<article class="overview-post">
-					<header class="overview-post-title">
-						<h2>Lorem ipsum dolor sit amet</h2>
-					</header>
-					<main class="overview-post-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem reprehenderit, neque ipsum at consectetur exercitationem dolorem odit libero alias quibusdam quis adipisci quae minima dolor quisquam ad perspiciatis nam officia! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt atque, maiores saepe consequatur cum a. Laborum explicabo reprehenderit facere vero eum optio quia tenetur in voluptatem, itaque est. Libero, suscipit.</p>
-					</main>
-					<footer class="overview-post-link"><a href="#" class="nav-link">Read more...</a></footer>
-				</article>
-			</div>
-		</div><!--End one post overview-->
+		</section><!--End right sidebar---------------------------------------------------------------------->
 	</section><!--End page body-->
 	<section class="container d-flex justify-content-center mt-5">
 		<button type="button" class="btn btn-primary w-25">Tải Thêm</button>
