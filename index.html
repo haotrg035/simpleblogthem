@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="author" content="Truong Nhut Hao">
+	<meta name="descripe" content="simple blog of Hao">
 	<meta charset="UTF-8">
 	<title>My Simple Blog</title>
 	<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
@@ -19,18 +20,18 @@
 				</a>
 				<button id="menu-toggler-btn" class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#main-collapse-nav">&#9776;</button>
 				<div class="navbar-collapse collapse justify-content-center" id="main-collapse-nav">
-					<ul id="navbar-coantainer" class="navbar-nav pl-5">
+					<ul id="navbar-coantainer" class="navbar-nav pr-4">
 						<li class="nav-item ">
-							<a class="nav-link" href="./index.html">Home</a>
+							<a class="nav-link" href="./index.html">Trang Chủ</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="#">Thông Tin Blog</a>
 						</li>
 						<li id="home-menu-logo-img-container" class="page-logo-img-container">
 							<span id="home-menu-logo-img" class="page-logo-img"></span>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Category</a>
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Chuyên Mục</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#">Action</a>
 								<a class="dropdown-item" href="#">Action</a>
@@ -40,17 +41,17 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#">Liên Lạc</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 		<div id="page-slogan" class=" w-100 mt-4 justify-content-center">
-			<span class="display-5">Welcome to my Blog :)</span>
+			<span class="display-5">Hello, Welcome to my Blog :)</span>
 		</div>
 	</header>
 	<section id="page-body" class="row fluid-container mx-auto">
-		<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0">
+		<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0 pl-1">
 			<div class="sidebar-item newest-post-board w-100 border-bottom mt-5">
 				<h5 class="border-bottom pb-2">Bài viết mới nhất</h5>
 				<ul class="list-group">
@@ -67,22 +68,34 @@
 					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
 				</ul>
 			</div>
+			<div class="sidebar-item top-post-board w-100 border-bottom mt-5">
+				<h5 class="border-bottom pb-2">Top Post</h5>
+				<ul class="list-group">
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+				</ul>
+			</div>
 		</section><!--End sidebar----------------------------------------------------------------------> 
 		<section class="col-lg-8"><!-- Start page content-->
 			<div class="row post-overview-container py-0 pb-1 mt-5">
-				
-				<div class="col col-lg-12 post-overview-content-container">
+				<div class="col post-overview-content-container">
 					<div class="overview-infor border-bottom pb-2 pt-1 small">
-						<div class="overview-infor-item">Category:
+						<div class="overview-infor-item border-right">Category:
 							<span class="overview-post-category"><a href="#">New post</a>,<a href="#">Personal</a></span>
 						</div>
-						<div class="overview-infor-item">
+						<div class="overview-infor-item border-right">
 							<span class="post-icon post-like-icon"></span>&nbsp
 							<span class="overview-post-like">1</span>
 						</div>
 						<div class="overview-infor-item">
 							<span class="post-icon post-comment-icon"></span>&nbsp
 							<span class="overview-post-comment">20</span>
+						</div>
+						<div class="overview-infor-item float-right">
+							<span class="font-italic font-weight-bold overview-post-date">Thứ 7, 28/7/2018</span>
 						</div>
 					</div>
 					<article class="overview-post">
@@ -99,9 +112,12 @@
 			</div><!--End one post overview-->
 			
 		</section><!-- End post overview column-->
-		<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0">
+		<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0 pr-1">
 			<div class="sidebar-item author-infor-board">
-				<h5 class="border-bottom pb-2">Thông tin tác giả Blog</h5>
+				<h5 class="border-bottom pb-2">Tác giả Blog</h5>
+				<img src="img/huskyavt.png" alt="author" width="100%" height="auto">
+				<p>Chào, tôi là Trương Nhựt Hào - một sinh viên ngành Kỹ thuật phần mềm có một đam mê đặc biệt với web và viết blog, hy vọng những kiến thức tôi chia sẽ sẽ giúp ích được cho bạn. <br>
+				<p class="border-left border-right text-center pl-2">"Chia sẽ là học tập"</p>
 			</div>
 		</section><!--End right sidebar---------------------------------------------------------------------->
 	</section><!--End page body-->

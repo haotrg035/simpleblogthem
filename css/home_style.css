@@ -86,6 +86,8 @@ visibility: hidden;
 }
 .post-overview-container{
 	padding: 1rem 0px;
+}
+.overview-post-link{
 	border-bottom:dashed 2px rgba(0,0,0,0.2);
 }
 article.overview-post{
@@ -99,13 +101,9 @@ article.overview-post{
 .overview-infor-item{
 	display: inline-block;
 	min-width: 3rem;
-	border-right: 1px solid rgba(0,0,0,0.2);
 	margin-right: 0.5rem;
 	padding-right: 0.5rem;
 }
-	.overview-infor-item:nth-child(3){
-		border: none;
-	}
 .post-icon{
 	display: inline-block;
 	background-size: cover;
@@ -120,7 +118,7 @@ article.overview-post{
 	}
 /*Sidebar Item*/
 .newest-post-board ul{
-	max-height: 400px;
+	max-height: 300px;
 	overflow-y: auto;
 }
 ::-webkit-scrollbar {
