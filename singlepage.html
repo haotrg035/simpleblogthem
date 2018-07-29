@@ -7,8 +7,8 @@
 	<meta charset="UTF-8">
 	<title>My Single page</title>
 	<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/home_style.css">
-	<link rel="stylesheet" type="text/css" href="css/home_style_max_425px.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/singlepage_style.css">
 	<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
 	<script>
 		$(function() {
@@ -17,10 +17,66 @@
 	</script>
 </head>
 <body>
-	<header id="page-header" class="row">
-		
-	</header>
-<!--script-->			
+<header id="page-header" class="row"></header>
+<div id="singlepage-container" class="fluid-container mx-auto mt-5 row">
+	<section id="sp-left-sidebar" class="col-lg-3">
+		<ul class="list-group">
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+			<li class="list-group-item">Cras justo odio</li>
+		</ul>
+	</section>
+	<section id="sp-page-body" class="page-body col-lg-9">
+		<section id="post-body" class="container">
+			<div id="post-infor" class="border-bottom pb-1">
+				<span id="post-infor-date" class="post-infor-item font-italic font-weight-bold border-right pr-2">Thứ 7, 28/07/2018</span>
+				<span id="post-infor-cate" class="pl-1">Chuyên mục: <span id="post-cate-content"><a href="#">Personal</a>,<a href="#">Hello World</a></span></span>
+			</div>
+			<article id="post-content" class="pt-4 border-bottom">
+				<header id="post-title" class="mb-4 pb-3 text-center">
+					<h2>Lorem ipsum dolor sit amet</h2>
+				</header>
+				<main id="post-main-content" class="">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor, eos sequi tempora laudantium temporibus, ad eaque vitae velit quidem excepturi dolorum, voluptatem, tempore possimus. Esse quisquam sequi debitis quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eum, quod. Aspernatur amet obcaecati perferendis autem quas, animi, velit. Animi sit, recusandae magnam adipisci autem veniam ex repudiandae doloribus iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga quos dicta perspiciatis tempora dignissimos quis itaque eligendi, suscipit voluptatem a in tenetur culpa ad facilis sequi, molestias quas eaque.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor, eos sequi tempora laudantium temporibus, ad eaque vitae velit quidem excepturi dolorum, voluptatem, tempore possimus. Esse quisquam sequi debitis quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eum, quod. Aspernatur amet obcaecati perferendis autem quas, animi, velit. Animi sit, recusandae magnam adipisci autem veniam ex repudiandae doloribus iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga quos dicta perspiciatis tempora dignissimos quis itaque eligendi, suscipit voluptatem a in tenetur culpa ad facilis sequi, molestias quas eaque. </p>
+					<img src="img/header_1280.jpg" width="75%" height="25%">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor, eos sequi tempora laudantium temporibus, ad eaque vitae velit quidem excepturi dolorum, voluptatem, tempore possimus. Esse quisquam sequi debitis quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eum, quod. Aspernatur amet obcaecati perferendis autem quas, animi, velit. Animi sit, recusandae magnam adipisci autem veniam ex repudiandae doloribus iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga quos dicta perspiciatis tempora dignissimos quis itaque eligendi, suscipit voluptatem a in tenetur culpa ad facilis sequi, molestias quas eaque.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor, eos sequi tempora laudantium temporibus, ad eaque vitae velit quidem excepturi dolorum, voluptatem, tempore possimus. Esse quisquam sequi debitis quas?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, eum, quod. Aspernatur amet obcaecati perferendis autem quas, animi, velit. Animi sit, recusandae magnam adipisci autem veniam ex repudiandae doloribus iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fuga quos dicta perspiciatis tempora dignissimos quis itaque eligendi, suscipit voluptatem a in tenetur culpa ad facilis sequi, molestias quas eaque. </p>
+				</main>
+				<footer id="post-tags" class="mt-4">
+					<h5 class="d-inline">TAGS: </h5><span id="tags-list"><a href="#">Hello world</a>, <a href="#">Personal</a>, <a href="#">Favourite</a></span>
+				</footer>
+			</article>
+		</section>
+		<section id="realted-posts-container" class="mt-4">
+			<h4 class="d-block">Bài viết liên quan</h4>
+			<div class="d-flex justify-content-around">
+				<div id="prev-post" class="related-post">
+				<a href="#">Realated Post</a>
+			</div>
+			<div id="next-post" class="related-post">
+				<a href="#">Realated Post</a>
+			</div>
+			</div>
+		</section>
+		<section id="post-comment" class="border">
+			<hr>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio facilis laborum et ullam consectetur ut numquam earum repellendus consequatur, aspernatur voluptates ipsum sunt quaerat dignissimos, porro, dolor dicta explicabo.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed distinctio facilis laborum et ullam consectetur ut numquam earum repellendus consequatur, aspernatur voluptates ipsum sunt quaerat dignissimos, porro, dolor dicta explicabo.
+			
+		</section>
+	</section>
+
+</div>
+<!--BS script-->			
 <script type="text/javascript" src="bootstrap-4.1.1/js/popper.min.js"></script>
 <script type="text/javascript" src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
 <!--<script type="text/javascript" src="js/fucntion.js"></script>-->

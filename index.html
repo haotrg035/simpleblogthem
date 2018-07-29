@@ -7,132 +7,98 @@
 	<meta charset="UTF-8">
 	<title>My Simple Blog</title>
 	<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/home_style.css">
 	<link rel="stylesheet" type="text/css" href="css/home_style_max_425px.css">
+	<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function() {
+			$('#page-header').load('header.html');
+		});
+	</script>
 </head>
 <body>
-<div id="page-container" class="fluid-container">
-	<header id="page-header" class="row">
-		<div class="page-cover-img"></div>
-			<nav id="page-header-menu" class="navbar border-bottom fluid-container navbar-expand-sm">
-				<a href="#" id="navbar-brand-logo-img-container" class="navbar-brand page-logo-img-container">
-					<span id="navbar-brand-logo-img" class="page-logo-img"></span>
-				</a>
-				<button id="menu-toggler-btn" class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#main-collapse-nav">&#9776;</button>
-				<div class="navbar-collapse collapse justify-content-center" id="main-collapse-nav">
-					<ul id="navbar-coantainer" class="navbar-nav pr-4">
-						<li class="nav-item ">
-							<a class="nav-link" href="./index.html">Trang Chủ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Thông Tin Blog</a>
-						</li>
-						<li id="home-menu-logo-img-container" class="page-logo-img-container">
-							<span id="home-menu-logo-img" class="page-logo-img"></span>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Chuyên Mục</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Action</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Action</a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Liên Lạc</a>
-						</li>
+		<header id="page-header" class="row"></header>
+	<div id="page-container" class="container">
+		<section id="page-body" class="row fluid-container mx-auto">
+			<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0">
+				<div class="sidebar-item newest-post-board w-100 border-bottom mt-5">
+					<h5 class="border-bottom pb-2">Bài viết mới nhất</h5>
+					<ul class="list-group">
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
 					</ul>
 				</div>
-			</nav>
-		<div id="page-slogan" class=" w-100 mt-4 justify-content-center">
-			<span class="display-5">Hello, Welcome to my Blog :)</span>
-		</div>
-	</header>
-	<section id="page-body" class="row fluid-container mx-auto">
-		<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0 pl-1">
-			<div class="sidebar-item newest-post-board w-100 border-bottom mt-5">
-				<h5 class="border-bottom pb-2">Bài viết mới nhất</h5>
-				<ul class="list-group">
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-				</ul>
-			</div>
-			<div class="sidebar-item top-post-board w-100 border-bottom mt-5">
-				<h5 class="border-bottom pb-2">Top Post</h5>
-				<ul class="list-group">
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-				</ul>
-			</div>
-		</section><!--End sidebar----------------------------------------------------------------------> 
-		<section class="col-lg-8"><!-- Start page content-->
-			<div class="row post-overview-container py-0 pb-1 mt-5">
-				<div class="col post-overview-content-container">
-					<div class="overview-infor border-bottom pb-2 pt-1 small">
-						<div class="overview-infor-item border-right">Category:
-							<span class="overview-post-category"><a href="#">New post</a>,<a href="#">Personal</a></span>
-						</div>
-						<div class="overview-infor-item border-right">
-							<span class="post-icon post-like-icon"></span>&nbsp
-							<span class="overview-post-like">1</span>
-						</div>
-						<div class="overview-infor-item">
-							<span class="post-icon post-comment-icon"></span>&nbsp
-							<span class="overview-post-comment">20</span>
-						</div>
-						<div class="overview-infor-item float-right">
-							<span class="font-italic font-weight-bold overview-post-date">Thứ 7, 28/7/2018</span>
-						</div>
-					</div>
-					<article class="overview-post">
-						<header class="overview-post-title">
-							<h2> Cách ăn cơm bằng miệng </h2>
-						</header>
-						<main class="overview-post-content">
-							<p>Trong một không gian tối tăm, không có một âm thanh, chỉ có sự yên tĩnh đến cực hạn, đáng lẽ trong một nơi như vậy sẽ không có một sinh vật nào tồn tại, nhưng chính giữa của nơi đây có một người thanh niên đang nằm, hai con mắt của hắn ta nhắm chặt như đang bất tỉnh.</p>
-							<p>Hắn ta cao khoảng 1m8, có mái tóc màu đen, khuôn mặt bình thường, nếu thả hắn ta vào nơi đông người thì có lẽ ngươi sẽ không bao giờ thấy hắn ta vì hắn quá bình thường. Cơ thể của hắn hiện lên những đường cong lực lượng, cơ bắp mạnh khỏe, cơ bụng sáu múi, chắc là hắn đã chăm chỉ luyện tập cho cơ thể mình để bù lại cho khuôn mặt tầm thường.</p>
-						</main>
-						<footer class="overview-post-link"><a href="./singlepage.html" class="nav-link">Read more...</a></footer>
-					</article>
+				<div class="sidebar-item top-post-board w-100 border-bottom mt-5">
+					<h5 class="border-bottom pb-2">Top Post</h5>
+					<ul class="list-group">
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
+					</ul>
 				</div>
-			</div><!--End one post overview-->
-			
-		</section><!-- End post overview column-->
-		<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0 pr-1">
-			<div class="sidebar-item author-infor-board">
-				<h5 class="border-bottom pb-2">Tác giả Blog</h5>
-				<img src="img/huskyavt.png" alt="author" width="100%" height="auto">
-				<p>Chào, tôi là Trương Nhựt Hào - một sinh viên ngành Kỹ thuật phần mềm có một đam mê đặc biệt với web và viết blog, hy vọng những kiến thức tôi chia sẽ sẽ giúp ích được cho bạn. <br>
-				<p class="border-left border-right text-center pl-2">"Chia sẽ là học tập"</p>
-			</div>
-		</section><!--End right sidebar---------------------------------------------------------------------->
-	</section><!--End page body-->
-	<section class="container d-flex justify-content-center mt-5">
-		<button type="button" class="btn btn-primary w-25">Tải Thêm</button>
-	</section>
-	<footer id="page-footer" class="d-flex mt-5  justify-content-center">
-		<p>(&copy) Truong Nhut Hao 2018</p>
-	</footer>
-</div>
+			</section><!--End sidebar----------------------------------------------------------------------> 
+			<section class="col-lg-8"><!-- Start page content-->
+				<div class="row post-overview-container py-0 pb-1 mt-5">
+					<div class="col post-overview-content-container">
+						<div class="overview-infor border-bottom pb-2 pt-1 small">
+							<div class="overview-infor-item border-right">Category:
+								<span class="overview-post-category"><a href="#">New post</a>,<a href="#">Personal</a></span>
+							</div>
+							<div class="overview-infor-item border-right">
+								<span class="post-icon post-like-icon"></span>&nbsp
+								<span class="overview-post-like">1</span>
+							</div>
+							<div class="overview-infor-item">
+								<span class="post-icon post-comment-icon"></span>&nbsp
+								<span class="overview-post-comment">20</span>
+							</div>
+							<div class="overview-infor-item float-right">
+								<span class="font-italic font-weight-bold overview-post-date">Thứ 7, 28/7/2018</span>
+							</div>
+						</div>
+						<article class="overview-post">
+							<header class="overview-post-title">
+								<h2> Cách ăn cơm bằng miệng </h2>
+							</header>
+							<main class="overview-post-content">
+								<p>Trong một không gian tối tăm, không có một âm thanh, chỉ có sự yên tĩnh đến cực hạn, đáng lẽ trong một nơi như vậy sẽ không có một sinh vật nào tồn tại, nhưng chính giữa của nơi đây có một người thanh niên đang nằm, hai con mắt của hắn ta nhắm chặt như đang bất tỉnh.</p>
+								<p>Hắn ta cao khoảng 1m8, có mái tóc màu đen, khuôn mặt bình thường, nếu thả hắn ta vào nơi đông người thì có lẽ ngươi sẽ không bao giờ thấy hắn ta vì hắn quá bình thường. Cơ thể của hắn hiện lên những đường cong lực lượng, cơ bắp mạnh khỏe, cơ bụng sáu múi, chắc là hắn đã chăm chỉ luyện tập cho cơ thể mình để bù lại cho khuôn mặt tầm thường.</p>
+							</main>
+							<footer class="overview-post-link"><a href="./singlepage.html" class="nav-link">Read more...</a></footer>
+						</article>
+					</div>
+				</div><!--End one post overview-->
+			</section><!-- End post overview column-->
+			<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0">
+				<div class="sidebar-item author-infor-board">
+					<h5 class="border-bottom pb-2">Tác giả Blog</h5>
+					<img src="img/huskyavt.png" alt="author" width="100%" height="auto" class="rounded">
+					<p>Chào, tôi là Trương Nhựt Hào - một sinh viên ngành Kỹ thuật phần mềm có một đam mê đặc biệt với web và viết blog, hy vọng những kiến thức tôi chia sẽ sẽ giúp ích được cho bạn.</p> </br>
+					<p class="border-left border-right text-center pl-2">"Chia sẽ là học tập"</p>
+				</div>
+			</section><!--End right sidebar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		</section><!--End page body-->
+		<section class="container d-flex justify-content-center mt-5">
+			<button type="button" class="btn btn-primary w-25">Tải Thêm</button>
+		</section>
+		<footer id="page-footer" class="d-flex mt-5  justify-content-center">
+			<p>(&copy) Truong Nhut Hao 2018</p>
+		</footer>
 		
-<!--script-->			
-<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="bootstrap-4.1.1/js/popper.min.js"></script>
-<script type="text/javascript" src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
-<!--<script type="text/javascript" src="js/fucntion.js"></script>-->
-</body>
-</html>
+		<!--script-->			
+		<script type="text/javascript" src="bootstrap-4.1.1/js/popper.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
+	</body>
+	</html>
