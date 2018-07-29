@@ -1,0 +1,8 @@
+.newest-post-board ul{
+	max-height: 300px;
+	overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}

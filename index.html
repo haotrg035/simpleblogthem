@@ -8,46 +8,23 @@
 	<title>My Simple Blog</title>
 	<link rel="stylesheet" href="bootstrap-4.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/sidebar-left.css">
 	<link rel="stylesheet" href="css/home_style.css">
 	<link rel="stylesheet" type="text/css" href="css/home_style_max_425px.css">
 	<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
 	<script>
 		$(function() {
 			$('#page-header').load('header.html');
+			$('#page-sidebar-left').load('sidebar-left.html');
 		});
 	</script>
 </head>
 <body>
-		<header id="page-header" class="row"></header>
+	<header id="page-header" class="row"></header>
 	<div id="page-container" class="container">
 		<section id="page-body" class="row fluid-container mx-auto">
 			<section id="page-sidebar-left" class="col-lg-2 page-vertical-sidebar px-0">
-				<div class="sidebar-item newest-post-board w-100 border-bottom mt-5">
-					<h5 class="border-bottom pb-2">Bài viết mới nhất</h5>
-					<ul class="list-group">
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					</ul>
-				</div>
-				<div class="sidebar-item top-post-board w-100 border-bottom mt-5">
-					<h5 class="border-bottom pb-2">Top Post</h5>
-					<ul class="list-group">
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-						<li class="list-group-item p-1 border-0"><a href="#">Lorem ipsum dolor sit amet...</a></li>
-					</ul>
-				</div>
+				
 			</section><!--End sidebar----------------------------------------------------------------------> 
 			<section class="col-lg-8"><!-- Start page content-->
 				<div class="row post-overview-container py-0 pb-1 mt-5">
@@ -83,10 +60,16 @@
 			</section><!-- End post overview column-->
 			<section id="page-sidebar-right" class="col-lg-2 mt-5 page-vertical-sidebar px-0">
 				<div class="sidebar-item author-infor-board">
-					<h5 class="border-bottom pb-2">Tác giả Blog</h5>
-					<img src="img/huskyavt.png" alt="author" width="100%" height="auto" class="rounded">
-					<p>Chào, tôi là Trương Nhựt Hào - một sinh viên ngành Kỹ thuật phần mềm có một đam mê đặc biệt với web và viết blog, hy vọng những kiến thức tôi chia sẽ sẽ giúp ích được cho bạn.</p> </br>
-					<p class="border-left border-right text-center pl-2">"Chia sẽ là học tập"</p>
+					<div class="card border-0">
+						<img class="card-img-top" data-src="holder.js/100%x180/" src="img/huskyavt.png" alt="Card image cap">
+						<div class="card-block">
+							<h4 class="card-title">Tác giả Blog</h4>
+							<p class="card-text">Chào, tôi là Trương Nhựt Hào - một sinh viên ngành Kỹ thuật phần mềm có một đam mê đặc biệt với web và viết blog, hy vọng những kiến thức tôi chia sẽ sẽ giúp ích được cho bạn.</p>
+						</div>
+						<footer class="card-footer">
+							<p class="m-0 font-italic text-center">"Chia sẽ là học tập"</p>
+						</footer>
+					</div>
 				</div>
 			</section><!--End right sidebar !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 		</section><!--End page body-->

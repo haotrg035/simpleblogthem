@@ -52,7 +52,9 @@ bottom: 0;
 left: 0;
 visibility: hidden;
 }
-
+#navbar-container{
+	font-size: 20px;
+}
 #page-header-menu li:hover a::before,.link-visiting{
 	visibility: visible;
 }
@@ -76,6 +78,11 @@ visibility: hidden;
 	left: 50%;
 	transform: translateX(-50%);
 }
+@media only screen and (max-width: 768px) {
+	#navbar-container{
+		font-size: 18px;
+	}
+}
 @media only screen and (max-width: 575px){
 	#home-menu-logo-img-container{
 		display: none;
@@ -89,7 +96,8 @@ visibility: hidden;
 		    top: -75px;
     		right: 0;
 		}
-	#navbar-coantainer{
+	#navbar-container{
 		padding-left: 3rem;
+		font-size: 20px;
 	}
 }
